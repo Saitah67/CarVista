@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; //
-import CarSearch from './searchbutton';
+
 import fb from './fb.png'
 import ig from './in.png'
 import x from './x.png'
@@ -64,7 +64,7 @@ function Getcars() {
       )}
 
       
-      <marquee behavior="scroll" direction="right"><h3 className='text-warning bg-success'>Pick out your best car.</h3></marquee>
+      <h3 className='text-warning bg-success'>Pick out your best car.</h3>
        
 
       {loading}
