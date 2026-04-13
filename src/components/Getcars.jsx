@@ -2,7 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; //
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Navbar';
 
 import fb from './fb.png'
 import ig from './in.png'
@@ -41,6 +42,8 @@ function Getcars() {
 
   return (
     <div className='container-fluid p-0 mt-4'>
+
+      <Navbar/>
      
 
       {/*  Carousel  */}
@@ -97,23 +100,11 @@ function Getcars() {
     <div className="container mt-5">
       <div className="row">
         <div className="col-md-4 mx-auto text-center">
-          <h3 className="text-light">Find Us on Social Media</h3>
-          {/* social icons here */}
-            <a href="https://www.instagram.com">
-            <img src={ig} alt=""/></a>
-            <a href="https://www.x.com">
-            <img src={x} alt=""/></a>
-            <a href="https://www.facebook.com">
-            <img src={fb} alt=""/><br/></a>
-            <p class="text-warning">You can also find us on our social media platform by clicking on the link above that is Facebook,Instagram and X platform</p>
+          
         </div>
       </div>
     </div>
-    <div>
-        <footer className="text-light bg-success text-center p-2">
-            <marquee behavior="scroll" direction=""><h5>Developed by Saitah_67.&copy; 2025. All rights reserved</h5></marquee>
-        </footer>
-      </div>
+    
     </div>
 
     

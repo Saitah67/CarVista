@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const MpesaPayment = () => {
 
@@ -43,6 +44,7 @@ const MpesaPayment = () => {
 
   return (
     <div className='row justify-content-center mt-2'>
+      <Navbar/>
       
 
       {loading}

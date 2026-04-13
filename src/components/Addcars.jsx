@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import { Carousel } from 'react-bootstrap';
+import Navbar from './Navbar';
 
 
 
@@ -42,6 +44,7 @@ function Addcars() {
   return (
     
     <div className='row justify-content-center'>
+      <Navbar/>
         <div className='col-md-6 card shadow m-2 p-4 bg-success'>
       <h1>Upload cars</h1>
 

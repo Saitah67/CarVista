@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { Carousel } from 'react-bootstrap';
+import Navbar from './Navbar';
 
 
 
@@ -40,8 +42,11 @@ const handleSubmit = async(e)=>{
     
   return (
     <div className='row justify-content-center'>
+        <Navbar/>
+        
         <div className='col-md-6 card shadow m-2 p-4 bg-success'>
             <h1>Signup</h1>
+            
 
              {/* binding variables */}
                 {loading}<br/>

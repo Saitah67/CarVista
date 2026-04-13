@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { Carousel } from 'react-bootstrap';
+import Navbar from './Navbar';
 
 function Signin() {
     // declaring variables
@@ -49,8 +51,13 @@ function Signin() {
   }
   return (
     <div className='row justify-content-center '>
+      <Navbar/>
+
+      
+      
         <div className='col-md-6 card shadow m-2 p-4 bg-success'>
             <h1>Signin</h1>
+            
 
             <form>
                 <input type="email" placeholder='Enter email' className='form-control' onChange={(e=>setEmail(e.target.value))}/><br /><br />
