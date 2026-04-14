@@ -1,13 +1,13 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Navbar';
 
-import fb from './fb.png'
-import ig from './in.png'
-import x from './x.png'
+// import fb from './fb.png'
+// import ig from './in.png'
+// import x from './x.png'
 
 function Getcars() {
   // declaring state variables

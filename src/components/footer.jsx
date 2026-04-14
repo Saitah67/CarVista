@@ -39,7 +39,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="bg-success text-center py-2">
-        <marquee behavior="" direction="right" ><small>© {new Date().getFullYear()} CarVista. All rights reserved.</small></marquee>
+        <small>© {new Date().getFullYear()} CarVista. All rights reserved.</small>
       </div>
     </footer>
   )

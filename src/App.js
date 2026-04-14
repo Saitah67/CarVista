@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import { Navbar, Nav, Container, } from 'react-bootstrap';
+
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Footer from './components/footer';
 
@@ -10,7 +10,6 @@ import Signin from './components/Signin';
 import Getcars from './components/Getcars';
 import Mpesapayment from './components/MpesaPayment';
 import Addcars from './components/Addcars';
-import UserDetails from './components/userdtails';
 
 
 

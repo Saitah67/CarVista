@@ -1,7 +1,7 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Carousel } from 'react-bootstrap';
+
 import Navbar from './Navbar';
 
 function Signin() {
@@ -59,7 +59,7 @@ function Signin() {
             <h1>Signin</h1>
             
 
-            <form>
+            <form onSubmit={handleSignin}>
                 <input type="email" placeholder='Enter email' className='form-control' onChange={(e=>setEmail(e.target.value))}/><br /><br />
                 <input type="password" placeholder='Password' className='form-control' onChange={(e=>setPassword(e.target.value))}/><br /><br />
                 <input type="submit" value={loading ? "Login...":"Signin"} disabled={loading} className='btn btn-primary w-75' /><br /><br />
